@@ -1,0 +1,15 @@
+// let currentdate = new Date(2023, 11, 3);
+// const currentMonth = currentdate.getMonth();
+// const remainingMonths = 11 - currentMonth;
+// console.log(remainingMonths);
+// const currentDay = currentdate.getDate();
+// console.log(currentDay);
+// const futureDate = 3;
+// const futureMonth = 11;
+// const a = currentdate.getTime();
+// const b = new Date().getTime();
+// const aB = a - b;
+// console.log(aB / (1000 * 60 * 60 * 24));
+// console.log(aB / (1000 * 60 * 60));
+const inp = document.querySelector(".birthdayMonth").value;
+console.log(inp);

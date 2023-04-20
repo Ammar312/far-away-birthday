@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right bottom, #ee9ca7, #ffdde1);
+}
+.logo {
+  width: 8.3em;
+  height: 8.3em;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo img {
+  width: 4.6em;
+  margin-bottom: 3px;
+}
+.inputContainer {
+  width: 100%;
+  height: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.birthdayDate {
+  width: 4em;
+  height: 2.8em;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 30px;
+  color: black;
+}
+.birthdayDate::placeholder {
+  color: black;
+}
+.birthdayMonth {
+  width: 7em;
+  height: 2.8em;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 5px 5px;
+  border-radius: 8px;
+  border: none;
+  color: black;
+}
+.submitButton {
+  width: 9em;
+  height: 4.2em;
+  color: #e21b70;
+  background-color: #ffffff;
+  border: 0px solid #e21b70;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 30px;
+  transition: all 0.4s ease-in;
+}
+
+.submitButton:hover {
+  color: #e21b70;
+  background-color: #fdf2f7;
+  box-shadow: 0px 3px whitesmoke;
+  border: 1px solid #fdf2f7;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid slateblue; */
+}
+.left {
+  margin-left: 10px;
+}
+.upperText {
+  font-size: 3.5rem;
+  color: rgb(255, 239, 243);
+  margin-bottom: 17px;
+  user-select: none;
+}
+.picture {
+  background-image: url("./pic2.png");
+  width: 48%;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* border: 2px solid black; */
+  /* display: none; */
+}
+.countContainer {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.countdown {
+  font-family: "Times New Roman", Times, serif !important;
+  border: 2px solid whitesmoke;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 35px 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 9px;
+}
+.countSpan {
+  font-size: 1.2rem;
+}

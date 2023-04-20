@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="inputContainer">
+      <form onsubmit="">
+        <input
+          type="number"
+          name=""
+          id="birthdayDate"
+          class="birthdayDate"
+          placeholder="Date"
+        />
+        <select name="" id="birthdayMonth" class="birthdayMonth">
+          <option value="January">January</option>
+          <option value="February">February</option>
+          <option value="March">March</option>
+          <option value="April">April</option>
+          <option value="May">May</option>
+          <option value="June">June</option>
+          <option value="July">July</option>
+          <option value="August">August</option>
+          <option value="September">September</option>
+          <option value="October">October</option>
+          <option value="November">November</option>
+          <option value="December">December</option>
+        </select>
+        <button type="submit" class="submitButton">Check It</button>
+      </form>
+    </div>
+    <div class="logo">
+      <img src="./birthday-cake.png" alt="" srcset="" />
+      <span>BIRTHDAY<br />COUNTER</span>
+    </div>
+    <div class="contentContainer">
+      <div class="left">
+        <p class="upperText">Remaining Time</p>
+        <div class="countContainer">
+          <div class="countdown" id="months">
+            07 <span class="countSpan">Months</span>
+          </div>
+          <div class="countdown" id="days">
+            234 <span class="countSpan">Days</span>
+          </div>
+          <div class="countdown" id="hours">
+            12000 <span class="countSpan">Hours</span>
+          </div>
+          <div class="countdown" id="minutes">
+            7555 <span class="countSpan">Minutes</span>
+          </div>
+          <div class="countdown" id="seconds">
+            987603 <span class="countSpan">Seconds</span>
+          </div>
+        </div>
+      </div>
+      <div class="picture"></div>
+    </div>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

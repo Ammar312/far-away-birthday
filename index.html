@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./birthday-cake.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <title>Birthday Counter</title>
   </head>
   <body>
     <div class="inputContainer">
-      <form onsubmit="">
+      <form onsubmit="getRemainingTime(); return false">
         <input
           type="number"
           name=""
@@ -18,6 +19,7 @@
           placeholder="Date"
         />
         <select name="" id="birthdayMonth" class="birthdayMonth">
+          <option value="">Months</option>
           <option value="January">January</option>
           <option value="February">February</option>
           <option value="March">March</option>
@@ -38,24 +40,34 @@
       <img src="./birthday-cake.png" alt="" srcset="" />
       <span>BIRTHDAY<br />COUNTER</span>
     </div>
+    <div class="welcome">
+      <div class="welcomeInner">
+        WELCOME<br />Enter Your Birthday Date and Month
+      </div>
+    </div>
     <div class="contentContainer">
       <div class="left">
         <p class="upperText">Remaining Time</p>
         <div class="countContainer">
-          <div class="countdown" id="months">
-            07 <span class="countSpan">Months</span>
+          <div class="countdown">
+            <p id="months">00</p>
+            <span class="countSpan">Months</span>
           </div>
-          <div class="countdown" id="days">
-            234 <span class="countSpan">Days</span>
+          <div class="countdown">
+            <p id="days">00</p>
+            <span class="countSpan">Days</span>
           </div>
-          <div class="countdown" id="hours">
-            12000 <span class="countSpan">Hours</span>
+          <div class="countdown">
+            <p id="hours">00</p>
+            <span class="countSpan">Hours</span>
           </div>
-          <div class="countdown" id="minutes">
-            7555 <span class="countSpan">Minutes</span>
+          <div class="countdown">
+            <p id="minutes">00</p>
+            <span class="countSpan">Minutes</span>
           </div>
-          <div class="countdown" id="seconds">
-            987603 <span class="countSpan">Seconds</span>
+          <div class="countdown">
+            <p id="seconds">00</p>
+            <span class="countSpan">Seconds</span>
           </div>
         </div>
       </div>

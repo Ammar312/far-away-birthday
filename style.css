@@ -16,8 +16,6 @@ body {
   width: 8.4em;
   height: 8.4em;
   border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
   background-color: white;
   position: absolute;
   top: 5px;
@@ -31,6 +29,9 @@ body {
 .logo img {
   width: 4.5em;
   margin-bottom: 3px;
+}
+.logo span {
+  font-size: 0.9rem;
 }
 .inputContainer {
   width: 100%;
@@ -114,9 +115,9 @@ body {
 .countdown {
   border: 2px solid whitesmoke;
   border-radius: 50%;
-  width: 110px;
-  height: 110px;
-  font-size: 2rem;
+  width: 9vw;
+  height: 20vh;
+  font-size: 1.5rem;
   text-align: center;
   padding: 35px 12px;
   background-color: white;
@@ -158,5 +159,123 @@ body {
   }
   100% {
     transform: translate(0%);
+  }
+}
+@media screen and (max-width: 1012px) {
+  .picture {
+    display: none;
+  }
+  .contentContainer {
+    position: relative;
+    top: 20vh;
+  }
+  .countdown {
+    font-size: 1.1rem;
+  }
+  .countSpan {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcomeInner {
+    font-size: 2rem;
+  }
+  .countdown {
+    font-size: 1.1rem;
+  }
+  .countSpan {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 690px) {
+  .logo {
+    width: 6.5rem;
+    height: 6.5rem;
+    left: 42%;
+  }
+  .logo img {
+    width: 2.5rem;
+  }
+  .logo span {
+    font-size: 0.8rem;
+  }
+  .welcomeInner {
+    font-size: 1rem;
+  }
+  .inputContainer {
+    width: 100%;
+    position: relative;
+    top: 20%;
+    /* border: 1px solid white; */
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 420px) {
+  .countdown {
+    width: 15vw;
+    height: 11vh;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .welcomeInner {
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+  }
+  .inputContainer {
+    width: 100%;
+    position: relative;
+    top: 20%;
+  }
+  .birthdayDate {
+    width: 4em;
+    height: 2.4em;
+    font-size: 1rem;
+  }
+  .birthdayMonth {
+    width: 7em;
+    height: 2.4em;
+    font-size: 1rem;
+  }
+  .submitButton {
+    width: 6em;
+    height: 3.2em;
+  }
+  .logo {
+    left: 35%;
+  }
+  .countdown {
+    width: 17vw;
+    height: 11vh;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 332px) {
+  .birthdayDate {
+    width: 3.6em;
+    height: 2.4em;
+    font-size: 0.8rem;
+  }
+  .birthdayMonth {
+    width: 6.7em;
+    height: 2.4em;
+    font-size: 0.7rem;
+  }
+  .submitButton {
+    width: 5em;
+    height: 2.3em;
+  }
+  .logo {
+    left: 35%;
+  }
+  .countdown {
+    width: 16vw;
+    height: 10vh;
+    padding: 10px;
+    margin: 3px;
+    font-size: 0.7rem;
   }
 }

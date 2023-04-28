@@ -9,6 +9,7 @@ window.getRemainingTime = function () {
   const birthdayMonthValue = birthdayMonth.value;
   let birthdayMonthIndex;
   let currentdate = new Date();
+  const today = currentdate.getDate();
   const currentMonth = currentdate.getMonth();
   const currentYear = currentdate.getFullYear();
   console.log(currentYear);
@@ -51,18 +52,30 @@ window.getRemainingTime = function () {
   const hours = Math.floor(diffInTime / (1000 * 60 * 60));
   const minutes = Math.floor(diffInTime / (1000 * 60));
   const seconds = 59 - currentdate.getSeconds();
+  const smallerThanTen = (item) => {
+    if (item < 10) {
+      return (item = `0${item}`);
+    } else {
+      return item;
+    }
+  };
 
-  if (birthdayMonthIndex < currentMonth || birthdayDate.value > 31) {
-    document.querySelector(".welcome").innerHTML = "Invalid Input";
-    document.querySelector(".contentContainer").style.display = "none";
+  if (
+    futureDate < currentdate ||
+    // birthdayMonthIndex < currentMonth ||
+    birthdayDate.value > 31
+    // birthdayDate.value < today
+  ) {
     clearTimeout(countDown);
+    // document.querySelector(".contentContainer").style.display = "none";
+    document.querySelector(".welcome").textContent = "Invalid Input";
   } else {
     document.querySelector(".welcome").style.display = "none";
     document.querySelector(".contentContainer").style.display = "flex";
-    document.querySelector("#months").innerHTML = months;
-    document.querySelector("#days").innerHTML = days;
-    document.querySelector("#hours").innerHTML = hours;
-    document.querySelector("#minutes").innerHTML = minutes;
+    document.querySelector("#months").innerHTML = smallerThanTen(months);
+    document.querySelector("#days").innerHTML = smallerThanTen(days);
+    document.querySelector("#hours").innerHTML = smallerThanTen(hours);
+    document.querySelector("#minutes").innerHTML = smallerThanTen(minutes);
     document.querySelector("#seconds").innerHTML = seconds;
     //   const countdown = setInterval(getRemainingTime, 1000);
   }
